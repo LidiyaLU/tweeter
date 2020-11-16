@@ -1,0 +1,18 @@
+.header {
+  height: 400px;
+  width: 100%;
+  margin-top: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:fuchsia;
+}
+
+.avatar-container {
+  text-align: center;
+}
+
+.avatar-container figcaption {
+  font-size: 175%;
+  font-weight: bold;
+}
