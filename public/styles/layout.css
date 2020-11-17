@@ -25,8 +25,8 @@ body {
  */
 
 main {
-  border-style: dashed;
-  height: 10em;
+  /* border-style: dashed;
+  height: 10em; */
   display: flex;
   align-items: center;
   flex-direction: column;
