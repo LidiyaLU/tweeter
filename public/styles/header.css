@@ -1,18 +1,19 @@
-.header {
+header {
   height: 400px;
   width: 100%;
-  margin-top: 5em;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color:fuchsia;
+  flex-direction: column;
+  background-color: #80007c;
+  background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
 }
 
-.avatar-container {
-  text-align: center;
+img {
+  align-self: flex-end;
 }
 
-.avatar-container figcaption {
+header h2 {
   font-size: 175%;
   font-weight: bold;
+  /*align-self: center;*/
 }
