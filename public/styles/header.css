@@ -1,4 +1,4 @@
-header {
+#main-header {
   height: 400px;
   width: 100%;
   display: flex;
@@ -6,13 +6,14 @@ header {
   flex-direction: column;
   background-color: #80007c;
   background-image: url(http://www.transparenttextures.com/patterns/clean-gray-paper.png);
+  margin-top: 120px;
 }
 
 img {
   align-self: flex-end;
 }
 
-header h2 {
+#main-header h2 {
   font-size: 175%;
   font-weight: bold;
   /*align-self: center;*/

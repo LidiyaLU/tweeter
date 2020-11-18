@@ -15,13 +15,16 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css">
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css">
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css">
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    
   </head>
 
   <body>
@@ -30,7 +33,7 @@
       <span>tweeter</span>
       <span class="new">Write a new tweet</span>
     </nav>
-    <header>
+    <header id="main-header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -42,7 +45,6 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       <section class="new-tweet">
 
         <form method="POST" action="/tweets/">
@@ -54,6 +56,27 @@
           </div>
         </form>
       </section>
+
+      <article class="tweet">
+        <header class="tweet-header">
+          
+          <img class="tweet-img" src="/images/profile-hex.png"> 
+          <figcaption>Your Name</figcaption>
+        </header>
+      
+        <p class="tweet-body">hello! this is an old tweet! test! test! test!</p> 
+        
+        <footer>
+          <i>10 days ago</i>
+          <div>
+          <i class="fa fa-flag"></i>
+          <i class="fa fa-heart"></i>
+          <i style="font-size:24px" 
+          class="fa">&#xf079;</i>
+          </div>
+        </footer>
+      </article> 
+      
     </main>
   </body>
 </html>

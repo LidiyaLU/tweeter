@@ -34,8 +34,11 @@
   align-self: flex-end;
   font-family: 'Bungee', cursive;
 }
+
 label {
   display: flex;
-  font-family: bold;
+  font-family: sans-serif;
   padding-left: 10px;
+  border: 1px solid red;
+  font-weight: bold;
 }

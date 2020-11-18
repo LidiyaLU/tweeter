@@ -1,0 +1,38 @@
+article {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  width: 100%;
+  margin-top: 1.5em;
+  background-color: transparent;
+  
+}
+
+.tweet header {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.tweet-img  {
+  display: flex; 
+  width: 4em;
+  background-color: transparent;
+  margin: 1em;
+}
+
+.tweet-body {
+  margin-left: 1em;
+}
+
+.tweet footer {
+  border-top: 2px solid black;
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+}
+
