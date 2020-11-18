@@ -8,7 +8,7 @@ $(document).ready(function() {
     $("output").text(maxLength-len+1);
     } else {
       $("output").text(maxLength-len);
-      $("output").css('color', old);
+      // $("output").css('color', old);
     }} else {
       $("output").text(maxLength-len);
       $("output").css('color','red')
