@@ -18,7 +18,7 @@
   outline: 0;
   background: transparent;
   border-bottom: 2px solid black;
-  margin: 0.5em;
+  /* margin: 0.5em; */
 }
 
 .new-tweet button {
@@ -37,8 +37,6 @@
 
 label {
   display: flex;
-  font-family: sans-serif;
+  font-family: "Bungee";
   padding-left: 10px;
-  border: 1px solid red;
-  font-weight: bold;
 }
