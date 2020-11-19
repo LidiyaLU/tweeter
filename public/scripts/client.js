@@ -72,11 +72,13 @@ $(document).ready(function() {
   $('form').submit((event) => {
 
     event.preventDefault();
+
     let len = $('#tweet-text').val().length;
+
     if (!len) {
-      alert('Empty message')
+      $('#errorm1').slideDown().delay(2000).fadeOut('slow');
     } else if(len > 140) {
-      alert('to long msg!')
+      $('#errorm2').slideDown().delay(2000).fadeOut('slow');
     } else {
 
     $.ajax({
@@ -84,10 +86,12 @@ $(document).ready(function() {
       method: "POST",
       data: $('form').serialize(),
     })
+    .then(() => {
+      $('#tweet-text').val('');
+      loadTweets();
+    })
   }
-    loadTweets();
-
-      
+       
   });
 
  const loadTweets = function() {
@@ -102,7 +106,5 @@ $(document).ready(function() {
   }
  
  loadTweets();
-
-
 
 });

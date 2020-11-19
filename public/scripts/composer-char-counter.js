@@ -1,17 +1,16 @@
 $(document).ready(function() {
-  // --- our code goes here ---
+  
   let maxLength = 140;
-  $("#tweet-text").keyup(function(key) {
+
+  $("#tweet-text").keyup(function() {
+
     let len = $(this).val().length;
+
     if (len <= maxLength) {
-      if (key === 'Backspace'){
-      $("output").text(maxLength-len+1);
+    
+      $("output").text(maxLength-len).css('color', '#545149');
     } else {
-      $("output").text(maxLength-len);
-      // $("output").css('color', old);
-    }} else {
-      $("output").text(maxLength-len);
-      $("output").css('color','red')
+      $("output").text(maxLength-len).css('color','red');
     }
 
   });

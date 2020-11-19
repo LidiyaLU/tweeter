@@ -36,3 +36,26 @@ article {
   box-shadow: 0 5px 15px rgba(0,0,0,0.8);
 }
 
+#errorm1 {
+  width      : 100%;
+  height     : 50px;
+  font-size  : 100%;
+  background : #A60000;
+  text-align : center;
+  position   : relative;
+  border     : 2px dotted white;
+  z-index    : 3;
+  display    : none;
+}
+
+#errorm2 {
+  width      : 100%;
+  height     : 50px;
+  font-size  : 100%;
+  background : orange;
+  text-align : center;
+  position   : relative;
+  border     : 2px dotted white;
+  z-index    : 3;
+  display    : none;
+}
