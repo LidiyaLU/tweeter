@@ -43,6 +43,8 @@ $(document).ready(function() {
 
   const createTweetElement = function(tweet) {
 
+    let escaped = $("<div>").text(tweet.content.text);
+
     const $tweet = $(
     `<article class="tweet">
     <header class="tweet-header">
@@ -50,7 +52,7 @@ $(document).ready(function() {
     <figcaption>${tweet.user.name}</figcaption>
     <p class="handle">${tweet.user.handle}</p>
     </header>
-    <p class="tweet-body">${tweet.content.text}</p>
+    <p class="tweet-body">${escaped.text()}</p>
     <footer>
       <i>${new Date(tweet.created_at).toLocaleDateString("en-US")}</i>
       <div>
