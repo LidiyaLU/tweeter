@@ -73,6 +73,8 @@ $(document).ready(function() {
     let len = $('#tweet-text').val().length;
     if (!len) {
       alert('Empty message')
+    } else if(len > 140) {
+      alert('to long msg!')
     } else {
 
     $.ajax({
@@ -81,10 +83,7 @@ $(document).ready(function() {
       data: $('form').serialize(),
     })
   }
-      // .then(function() {
-      //   loadTweets();
-      // })
-      loadTweets();
+    loadTweets();
 
       
   });
@@ -95,7 +94,6 @@ $(document).ready(function() {
             method:"GET",
             dataType: 'json',
             success:function(res) {
-            console.log('ok')
             renderTweets(res);
           }
         })
