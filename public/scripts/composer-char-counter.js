@@ -4,8 +4,8 @@ $(document).ready(function() {
   $("#tweet-text").keyup(function(key) {
     let len = $(this).val().length;
     if (len <= maxLength) {
-    if (key === 'Backspace'){
-    $("output").text(maxLength-len+1);
+      if (key === 'Backspace'){
+      $("output").text(maxLength-len+1);
     } else {
       $("output").text(maxLength-len);
       // $("output").css('color', old);

@@ -70,16 +70,23 @@ $(document).ready(function() {
   $('form').submit((event) => {
 
     event.preventDefault();
+    let len = $('#tweet-text').val().length;
+    if (!len) {
+      alert('Empty message')
+    } else {
 
     $.ajax({
       url: "/tweets",
       method: "POST",
-      data: $('form').serialize()
+      data: $('form').serialize(),
     })
-      .then(function() {
-        loadTweets();
-      }
-      )
+  }
+      // .then(function() {
+      //   loadTweets();
+      // })
+      loadTweets();
+
+      
   });
 
  const loadTweets = function() {
@@ -95,5 +102,7 @@ $(document).ready(function() {
   }
  
  loadTweets();
+
+
 
 });
