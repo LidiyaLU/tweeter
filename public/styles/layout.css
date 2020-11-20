@@ -25,10 +25,15 @@ body {
  */
 
 main {
-  /* border-style: dashed;
-  height: 10em; */
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 0 5%;
+}
+
+@media only screen and (min-width: 1024px){
+.parents-flex{
+  display: flex;
+  justify-content: space-between;
+}
 }

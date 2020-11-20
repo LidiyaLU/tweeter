@@ -1,3 +1,25 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    height: 120px;
+    background-color: transparent;
+    padding: 1.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav span {
+    font-family: 'Bungee', cursive;
+    color: #FFFFFF;
+  }
+  .new {
+    padding: 1.5em;
+    float: right;
+    position: relative;
+    font-size: smaller;
+  }
+}
+@media only screen and (min-width: 1024px){
 nav {
   height: 120px;
   background-color: #4056A1;
@@ -17,4 +39,5 @@ nav span {
   position: relative;
   font-size: smaller;
 
+}
 }
