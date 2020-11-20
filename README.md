@@ -4,6 +4,11 @@ Tweeter is a simple, single-page Twitter clone.
 
 This studying project is created to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
 
+## Final Product
+
+!["tweeter-laptop-mediaquaery"](https://github.com/LidiyaLU/tweeter/blob/master/docs/tweeter-laptop-mediaquaery.png)
+!["tweeter-tablet-mediaquery-error-empty-input"](https://github.com/LidiyaLU/tweeter/blob/master/docs/tweeter-tablet-mediaquery-error-empty-input.png)
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
